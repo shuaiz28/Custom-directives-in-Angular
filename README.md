@@ -1,8 +1,8 @@
 # Custom-directives-in-Angular
 4 types of directives:
 
-1. Element
-2. Attribute
+1. Element (Use this when you are creating a component)
+2. Attribute (Use this when you are decorating an existing element with new functionality)
 3. CSS class
 4. Comment
 
