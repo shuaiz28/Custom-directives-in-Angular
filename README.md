@@ -16,4 +16,4 @@ Matching Directives:
 Directives Normalization:
 
 - In .js, directives names are in camelCase(myDir).
-- In .html, directives names are in lower-case(<my-dir></my-dir>).
+- In .html, directives names are in lower-case <my-dir></my-dir> or <div my-dir></div>.
