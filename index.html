@@ -10,8 +10,16 @@
 
 
     <div ng-controller='directiveCtrl'>
-    	<div display></div>
+    	<display-data-in-table></display-data-in-table>
     </div>
+    <hr>
+
+    <div ng-controller='isolateCtrl'>
+    	<div customer-display c-info='customer1'></div>
+    	<div customer-display c-info='customer2'></div>
+    	<div customer-display c-info='customer3'></div>
+    </div>
+    <hr>
 
 
 </body>

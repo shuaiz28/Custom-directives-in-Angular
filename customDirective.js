@@ -19,9 +19,25 @@ app.controller('directiveCtrl', function($scope) {
         }
     ];
 })
-app.directive('display', function() {
+app.directive('displayDataInTable', function() {
 	return {
-    	restrice: 'AE',
+    	restrict: 'AE',
+        scope: true, 
         templateUrl: 'articleTable.html'
+    };
+})
+
+app.controller('isolateCtrl', function($scope) {
+    $scope.customer1 = {name: 'customer1', id: 1};
+    $scope.customer2 = {name: 'customer2', id: 2};
+    $scope.customer3 = {name: 'customer3', id: 3};
+})
+app.directive('customerDisplay', function() {
+    return {
+        scope: {
+            customerInfo: '=cInfo'      //the directive isolates everything except models(customerInfo) you added to the scope:{}
+        },
+        template: 'Name: {{customerInfo.name}} | id: {{customerInfo.id}}'  
+        // if we use 'Name: {{customer1.name}} | id: {{customer1.id}}', won't print, because customer1 is not defined, we didn't pass it into scope:{}
     };
 })
