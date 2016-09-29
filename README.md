@@ -23,5 +23,4 @@ Scope:
 - By default, a directive shares whatever scope was defined above it. (exact same scope object)
 - scope: true, and scope: {},  both will created a child scope for the directive.
   - scope: true,    inherit the properties from the parent.
-  - scope: {},      will not inherit the properties from the parent and hence called isolated.
-    the directive isolates everything except models(customerInfo) you added to the scope:{}
+  - scope: {},      will not inherit the properties from the parent and hence called isolated. (The directive isolates everything except models(customerInfo) you added to the scope:{})
