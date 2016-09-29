@@ -28,7 +28,7 @@ Scope:
 link function:
 
 - used to manipulate the DOM.
-- link: function($scope, element, attrs) 3 parameters
+- link: function($scope, element, attrs){} 3 parameters
   1.the scope.
   2.the element that the directive is associated with.
   3.the attributes of the target element.
