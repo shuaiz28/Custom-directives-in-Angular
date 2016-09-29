@@ -41,3 +41,19 @@ app.directive('customerDisplay', function() {
         // if we use 'Name: {{customer1.name}} | id: {{customer1.id}}', won't print, because customer1 is not defined, we didn't pass it into scope:{}
     };
 })
+
+app.directive('manipulateDom', function() {
+    return {
+        link: function($scope, element, attrs) {
+            element.bind('dblclick', function() {
+                element.html('You have dblclicked me!');
+            });
+            element.bind('mouseenter', function() {
+                element.css('color', '#ff0000');
+            });
+            element.bind('mouseleave', function() {
+                element.css('color', '#000000');
+            })
+        }
+    };
+})
