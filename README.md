@@ -24,3 +24,11 @@ Scope:
 - scope: true, and scope: {},  both will created a child scope for the directive.
   - scope: true,    inherit the properties from the parent.
   - scope: {},      will not inherit the properties from the parent and hence called isolated. (The directive isolates everything except models(customerInfo) you added to the scope:{})
+  
+link function:
+
+- used to manipulate the DOM.
+- link: function($scope, element, attrs){} 3 parameters
+  1.the scope.
+  2.the element that the directive is associated with.
+  3.the attributes of the target element.
