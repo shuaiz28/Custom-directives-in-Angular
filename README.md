@@ -17,3 +17,10 @@ Directives Normalization:
 
 - In .js, directives names are in camelCase(myDir).
 - In .html, directives names are in lower-case (< my-dir >< /my-dir > or < div my-dir >< /div >).
+
+Scope:
+
+- By default, a directive shares whatever scope was defined above it. (exact same scope object)
+- scope: true, and scope: {},  both will created a child scope for the directive.
+  - scope: true,    inherit the properties from the parent.
+  - scope: {},      will not inherit the properties from the parent and hence called isolated. (The directive isolates everything except models(customerInfo) you added to the scope:{})
