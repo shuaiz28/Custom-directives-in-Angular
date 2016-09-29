@@ -24,3 +24,4 @@ Scope:
 - scope: true, and scope: {},  both will created a child scope for the directive.
   - scope: true,    inherit the properties from the parent.
   - scope: {},      will not inherit the properties from the parent and hence called isolated.
+    the directive isolates everything except models(customerInfo) you added to the scope:{}
